@@ -1,5 +1,5 @@
 # Stage 1: Build
-FROM node:20-slim AS builder
+FROM --platform=$BUILDPLATFORM node:20-slim AS builder
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
