@@ -38,5 +38,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+          tags: ghcr.io/junatheslug/noaa-fisheries-dashboard:latest
           labels: ${{ steps.meta.outputs.labels }}
