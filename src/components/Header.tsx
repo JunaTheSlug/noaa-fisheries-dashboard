@@ -1,4 +1,3 @@
-import React from 'react';
 import { Wifi, WifiOff, ShieldCheck } from 'lucide-react';
 
 interface HeaderProps {

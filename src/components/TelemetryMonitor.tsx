@@ -1,6 +1,5 @@
-import React from 'react';
 import { Activity, Terminal } from 'lucide-react';
-import { TelemetryData } from '../hooks/useTelemetry';
+import type { TelemetryData } from '../hooks/useTelemetry';
 
 interface Props {
   telemetry: TelemetryData[];

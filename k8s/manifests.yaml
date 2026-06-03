@@ -14,6 +14,8 @@ spec:
       labels:
         app: portfolio-dashboard
     spec:
+      imagePullSecrets:
+      - name: ghcr-pull-secret
       containers:
       - name: dashboard
         image: ghcr.io/junatheslug/noaa-fisheries-dashboard:latest

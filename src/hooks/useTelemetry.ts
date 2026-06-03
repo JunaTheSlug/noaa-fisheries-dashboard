@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-export interface TelemetryData {
+export type TelemetryData = {
   timestamp: string;
   depth: number;
   temp: number;

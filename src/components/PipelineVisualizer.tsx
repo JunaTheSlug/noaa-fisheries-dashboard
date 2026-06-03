@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Ship, Cpu, Satellite, Cloud, ChevronRight, Info } from 'lucide-react';
+import { useState } from 'react';
+import { Ship, Cpu, Satellite, Cloud, ChevronRight } from 'lucide-react';
 
 const PipelineVisualizer = () => {
   const [selected, setSelected] = useState<string | null>(null);
@@ -19,7 +19,7 @@ const PipelineVisualizer = () => {
       
       <div className="flex-1 flex items-center justify-between px-4">
         {nodes.map((node, i) => (
-          <React.Fragment key={node.id}>
+          <div key={node.id} className="flex items-center">
             <div 
               className={`flex flex-col items-center gap-3 cursor-pointer group relative`}
               onClick={() => setSelected(node.id)}
@@ -34,9 +34,9 @@ const PipelineVisualizer = () => {
               </span>
             </div>
             {i < nodes.length - 1 && (
-              <ChevronRight className="text-ocean-700 animate-pulse" />
+              <ChevronRight className="text-ocean-700 animate-pulse mx-4" />
             )}
-          </React.Fragment>
+          </div>
         ))}
       </div>
 

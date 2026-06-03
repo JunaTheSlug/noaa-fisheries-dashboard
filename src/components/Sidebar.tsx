@@ -1,4 +1,3 @@
-import React from 'react';
 import { LayoutDashboard, Database, Satellite, Anchor, Settings, Activity } from 'lucide-react';
 
 const Sidebar = () => {
