@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: dashboard
-        image: ghcr.io/CHANGE_ME_TO_ORG_OR_USER/noaa-fisheries-dashboard:latest
+        image: ghcr.io/junatheslug/noaa-fisheries-dashboard:latest
         ports:
         - containerPort: 80
         resources:
